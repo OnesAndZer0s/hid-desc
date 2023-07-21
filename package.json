@@ -1,0 +1,9 @@
+{
+  "name": "hid-desc",
+  "version": "0.0.1",
+  "description": "HID Descriptors, but like, human-readable",
+  "main": "build/hid.js",
+  "repository": "NOTYET",
+  "author": "OnesAndZer0s",
+  "license": "GNU"
+}
