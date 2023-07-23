@@ -40,7 +40,7 @@ let descriptor = new hD.HIDDescriptor()
           .LogicalMaximum(127)
           .ReportSize(8)
           .ReportCount(2)
-          .Push
+          .Push()
           .Usage(X)
           .Usage(Y)
           .Input(Data, Variable, Absolute)
@@ -89,4 +89,4 @@ N / A yet - coming soon!
 ## TODO
 - [ ] Add documentation
 - [ ] Add a way to parse HID Descriptor from a binary array
-- [ ] Add a way to generate HID Report from Descriptor?
+- [ ] Add a way to generate a HID Report from a HID Descriptor
