@@ -1,0 +1,35 @@
+export namespace Haptics {
+  export const UsagePage = () => 0x0E;
+}
+
+export enum Haptics {
+  SimpleHapticController = 0x01,
+  WaveformList = 0x10,
+  DurationList = 0x11,
+  AutoTrigger = 0x20,
+  ManualTrigger = 0x21,
+  AutoTriggerAssociatedControl = 0x22,
+  Intensity = 0x23,
+  RepeatCount = 0x24,
+  RetriggerPeriod = 0x25,
+  WaveformVendorPage = 0x26,
+  WaveformVendorID = 0x27,
+  WaveformCutoffTime = 0x28,
+  WaveformNone = 0x1001,
+  WaveformStop = 0x1002,
+  WaveformClick = 0x1003,
+  WaveformBuzzContinuous = 0x1004,
+  WaveformRumbleContinuous = 0x1005,
+  WaveformPress = 0x1006,
+  WaveformRelease = 0x1007,
+  WaveformHover = 0x1008,
+  WaveformSuccess = 0x1009,
+  WaveformError = 0x100A,
+  WaveformInkContinuous = 0x100B,
+  WaveformPencilContinuous = 0x100C,
+  WaveformMarkerContinuous = 0x100D,
+  WaveformChiselMarkerContinuous = 0x100E,
+  WaveformBrushContinuous = 0x100F,
+  WaveformEraserContinuous = 0x1010,
+  WaveformSparkleContinuous = 0x1011,
+}

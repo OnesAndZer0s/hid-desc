@@ -1,8 +1,8 @@
-export namespace GameControls {
+export namespace GenericDevice {
   export const UsagePage = () => 0x06;
 }
 
-export enum GameControls {
+export enum GenericDevice {
   BackgroundControls = 0x01,
   BatteryStrength = 0x20,
   WirelessChannel = 0x21,
