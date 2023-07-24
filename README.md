@@ -64,7 +64,7 @@ const desc = new HIDDesc()
 
 ## Documentation
 
-N / A yet - coming soon!
+
 
 ## Resources
 * [HID Descriptor Tool](https://eleccelerator.com/usbdescreqparser/)

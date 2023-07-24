@@ -34,7 +34,11 @@ import { Unicode } from "./usages/Unicode";
 import { VESAVirtualControls } from "./usages/VESAVirtualControls";
 import { VRControls } from "./usages/VRControls";
 
-export let UsagePages:
+/**
+ * 
+ * @enum
+ * */
+export const UsagePages:
   {
     GenericDesktop: typeof GenericDesktop,
     SimulationControls: typeof SimulationControls,
@@ -72,42 +76,44 @@ export let UsagePages:
     GamingDevice: typeof GamingDevice,
     FIDOAlliance: typeof FIDOAlliance,
   } = {
-  GenericDesktop,
-  SimulationControls,
-  VRControls,
-  SportControls,
-  GameControls,
-  GenericDevice,
-  KeyboardKeypad,
-  LED,
-  Button,
-  Ordinal,
-  TelephonyDevice,
-  Consumer,
-  Digitizer,
-  Haptics,
-  PhysicalInputDevice,
-  Unicode,
-  SoC,
-  EyeAndHeadTracker,
-  AuxiliaryDisplay,
-  Sensor,
-  MedicalInstrument,
-  BrailleDisplay,
-  Lighting,
-  Monitor,
-  MonitorEnum,
-  VESAVirtualControls,
-  Power,
-  BatterySystem,
-  BarcodeScanner,
-  Scales,
-  MagneticStripeReader,
-  CameraControl,
-  Arcade,
-  GamingDevice,
-  FIDOAlliance,
+    GenericDesktop,
+    SimulationControls,
+    VRControls,
+    SportControls,
+    GameControls,
+    GenericDevice,
+    KeyboardKeypad,
+    LED,
+    Button,
+    Ordinal,
+    TelephonyDevice,
+    Consumer,
+    Digitizer,
+    Haptics,
+    PhysicalInputDevice,
+    Unicode,
+    SoC,
+    EyeAndHeadTracker,
+    AuxiliaryDisplay,
+    Sensor,
+    MedicalInstrument,
+    BrailleDisplay,
+    Lighting,
+    Monitor,
+    MonitorEnum,
+    VESAVirtualControls,
+    Power,
+    BatterySystem,
+    BarcodeScanner,
+    Scales,
+    MagneticStripeReader,
+    CameraControl,
+    Arcade,
+    GamingDevice,
+    FIDOAlliance,
 
-};
+  } as const;
+
+/** @ignore */
 export type UsagePages = ( typeof UsagePages )[ keyof typeof UsagePages ];
 

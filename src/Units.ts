@@ -1,3 +1,4 @@
+
 export interface Unit {
   System?: Unit.System;
   Length?: Unit.Length;
@@ -7,8 +8,6 @@ export interface Unit {
   Current?: Unit.Current | number;
   LuminousIntensity?: Unit.LuminousIntensity | number;
 }
-
-
 
 export namespace Unit {
   export enum System {

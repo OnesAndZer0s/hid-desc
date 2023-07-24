@@ -1,3 +1,5 @@
+/**  */
+
 export enum FieldDesc {
   /**Data indicates the item is defining report
 fields that contain modifiable device data */

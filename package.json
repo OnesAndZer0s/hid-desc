@@ -14,9 +14,12 @@
   },
   "author": "OnesAndZer0s",
   "license": "GNU",
-
   "scripts": {
-    "test":"ts-node TEST.ts",
-    "build": "tsc"
+    "test": "ts-node TEST.ts",
+    "build": "tsc",
+    "docgen" : "typedoc src/hid.ts --out docs"
+  },
+  "devDependencies": {
+    "typedoc": "^0.24.8"
   }
 }
