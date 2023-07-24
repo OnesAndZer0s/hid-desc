@@ -112,7 +112,7 @@ export enum PreferredColors {
   Plum = 0xDDA0DD,
   PowderBlue = 0xB0E0E6,
   Purple = 0x800080,
-  RebeccaPurple = 0x663399,
+  RebeccaPurple = 0x663399, // please read the backstory on this
   Red = 0xFF0000,
   RosyBrown = 0xBC8F8F,
   RoyalBlue = 0x4169E1,

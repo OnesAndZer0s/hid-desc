@@ -1,0 +1,35 @@
+export declare namespace Lighting {
+    const UsagePage: () => number;
+}
+export declare enum Lighting {
+    LampArray = 1,
+    LampArrayAttributesReport = 2,
+    LampCount = 3,
+    BoundingBoxWidthInMicrometers = 4,
+    BoundingBoxHeightInMicrometers = 5,
+    BoundingBoxDepthInMicrometers = 6,
+    LampArrayKind = 7,
+    MinUpdateIntervalInMicroseconds = 8,
+    LampAttributesRequestReport = 32,
+    LampID = 33,
+    LampAttributesResponseReport = 34,
+    PositionXInMicrometers = 35,
+    PositionYInMicrometers = 36,
+    PositionZInMicrometers = 37,
+    LampPurposes = 38,
+    UpdateLatencyInMicroseconds = 39,
+    RedLevelCount = 40,
+    GreenLevelCount = 41,
+    BlueLevelCount = 42,
+    IntensityLevelCount = 43,
+    IsProgrammable = 44,
+    InputBinding = 45,
+    LampMultiUpdateReport = 80,
+    RedUpdateChannel = 81,
+    GreenUpdateChannel = 82,
+    BlueUpdateChannel = 83,
+    IntensityUpdateChannel = 84,
+    LampUpdateFlags = 85,
+    LampArrayControlReport = 112,
+    AutonomousMode = 113
+}

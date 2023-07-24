@@ -1,0 +1,33 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GenericDevice = void 0;
+var GenericDevice;
+(function (GenericDevice) {
+    GenericDevice.UsagePage = () => 0x06;
+})(GenericDevice = exports.GenericDevice || (exports.GenericDevice = {}));
+(function (GenericDevice) {
+    GenericDevice[GenericDevice["BackgroundControls"] = 1] = "BackgroundControls";
+    GenericDevice[GenericDevice["BatteryStrength"] = 32] = "BatteryStrength";
+    GenericDevice[GenericDevice["WirelessChannel"] = 33] = "WirelessChannel";
+    GenericDevice[GenericDevice["WirelessID"] = 34] = "WirelessID";
+    GenericDevice[GenericDevice["DiscoverWirelessControl"] = 35] = "DiscoverWirelessControl";
+    GenericDevice[GenericDevice["SecurityCodeCharEntered"] = 36] = "SecurityCodeCharEntered";
+    GenericDevice[GenericDevice["SecurityCodeCharacterErased"] = 37] = "SecurityCodeCharacterErased";
+    GenericDevice[GenericDevice["SecurityCodeCleared"] = 38] = "SecurityCodeCleared";
+    GenericDevice[GenericDevice["SequenceID"] = 39] = "SequenceID";
+    GenericDevice[GenericDevice["SequenceIDReset"] = 40] = "SequenceIDReset";
+    GenericDevice[GenericDevice["RFSignalStrength"] = 41] = "RFSignalStrength";
+    GenericDevice[GenericDevice["SoftwareVersion"] = 42] = "SoftwareVersion";
+    GenericDevice[GenericDevice["ProtocolVersion"] = 43] = "ProtocolVersion";
+    GenericDevice[GenericDevice["HardwareVersion"] = 44] = "HardwareVersion";
+    GenericDevice[GenericDevice["Major"] = 45] = "Major";
+    GenericDevice[GenericDevice["Minor"] = 46] = "Minor";
+    GenericDevice[GenericDevice["Revision"] = 47] = "Revision";
+    GenericDevice[GenericDevice["Handedness"] = 48] = "Handedness";
+    GenericDevice[GenericDevice["EitherHand"] = 49] = "EitherHand";
+    GenericDevice[GenericDevice["LeftHand"] = 50] = "LeftHand";
+    GenericDevice[GenericDevice["RightHand"] = 51] = "RightHand";
+    GenericDevice[GenericDevice["BothHands"] = 52] = "BothHands";
+    GenericDevice[GenericDevice["GripPoseOffset"] = 64] = "GripPoseOffset";
+    GenericDevice[GenericDevice["PointerPoseOffset"] = 65] = "PointerPoseOffset";
+})(GenericDevice = exports.GenericDevice || (exports.GenericDevice = {}));

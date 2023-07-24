@@ -1,0 +1,38 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MedicalInstrument = void 0;
+var MedicalInstrument;
+(function (MedicalInstrument) {
+    MedicalInstrument.UsagePage = () => 0x40;
+})(MedicalInstrument = exports.MedicalInstrument || (exports.MedicalInstrument = {}));
+(function (MedicalInstrument) {
+    MedicalInstrument[MedicalInstrument["MedicalUltraSound"] = 1] = "MedicalUltraSound";
+    MedicalInstrument[MedicalInstrument["VCRAcquisition"] = 32] = "VCRAcquisition";
+    MedicalInstrument[MedicalInstrument["FreezeThaw"] = 33] = "FreezeThaw";
+    MedicalInstrument[MedicalInstrument["ClipStore"] = 34] = "ClipStore";
+    MedicalInstrument[MedicalInstrument["Update"] = 35] = "Update";
+    MedicalInstrument[MedicalInstrument["Next"] = 36] = "Next";
+    MedicalInstrument[MedicalInstrument["Save"] = 37] = "Save";
+    MedicalInstrument[MedicalInstrument["Print"] = 38] = "Print";
+    MedicalInstrument[MedicalInstrument["MicrophoneEnable"] = 39] = "MicrophoneEnable";
+    MedicalInstrument[MedicalInstrument["Cine"] = 64] = "Cine";
+    MedicalInstrument[MedicalInstrument["TransmitPower"] = 65] = "TransmitPower";
+    MedicalInstrument[MedicalInstrument["Volume"] = 66] = "Volume";
+    MedicalInstrument[MedicalInstrument["Focus"] = 67] = "Focus";
+    MedicalInstrument[MedicalInstrument["Depth"] = 68] = "Depth";
+    MedicalInstrument[MedicalInstrument["SoftStepPrimary"] = 96] = "SoftStepPrimary";
+    MedicalInstrument[MedicalInstrument["SoftStepSecondary"] = 97] = "SoftStepSecondary";
+    MedicalInstrument[MedicalInstrument["DepthGainCompensation"] = 112] = "DepthGainCompensation";
+    MedicalInstrument[MedicalInstrument["ZoomSelect"] = 128] = "ZoomSelect";
+    MedicalInstrument[MedicalInstrument["ZoomAdjust"] = 129] = "ZoomAdjust";
+    MedicalInstrument[MedicalInstrument["SpectralDopplerModeSelect"] = 130] = "SpectralDopplerModeSelect";
+    MedicalInstrument[MedicalInstrument["SpectralDopplerAdjust"] = 131] = "SpectralDopplerAdjust";
+    MedicalInstrument[MedicalInstrument["ColorDopplerModeSelect"] = 132] = "ColorDopplerModeSelect";
+    MedicalInstrument[MedicalInstrument["ColorDopplerAdjust"] = 133] = "ColorDopplerAdjust";
+    MedicalInstrument[MedicalInstrument["MotionModeSelect"] = 134] = "MotionModeSelect";
+    MedicalInstrument[MedicalInstrument["MotionModeAdjust"] = 135] = "MotionModeAdjust";
+    MedicalInstrument[MedicalInstrument["TwoDModeSelect"] = 136] = "TwoDModeSelect";
+    MedicalInstrument[MedicalInstrument["TwoDModeAdjust"] = 137] = "TwoDModeAdjust";
+    MedicalInstrument[MedicalInstrument["SoftControlSelect"] = 160] = "SoftControlSelect";
+    MedicalInstrument[MedicalInstrument["SoftControlAdjust"] = 161] = "SoftControlAdjust";
+})(MedicalInstrument = exports.MedicalInstrument || (exports.MedicalInstrument = {}));

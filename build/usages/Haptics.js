@@ -1,0 +1,38 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Haptics = void 0;
+var Haptics;
+(function (Haptics) {
+    Haptics.UsagePage = () => 0x0E;
+})(Haptics = exports.Haptics || (exports.Haptics = {}));
+(function (Haptics) {
+    Haptics[Haptics["SimpleHapticController"] = 1] = "SimpleHapticController";
+    Haptics[Haptics["WaveformList"] = 16] = "WaveformList";
+    Haptics[Haptics["DurationList"] = 17] = "DurationList";
+    Haptics[Haptics["AutoTrigger"] = 32] = "AutoTrigger";
+    Haptics[Haptics["ManualTrigger"] = 33] = "ManualTrigger";
+    Haptics[Haptics["AutoTriggerAssociatedControl"] = 34] = "AutoTriggerAssociatedControl";
+    Haptics[Haptics["Intensity"] = 35] = "Intensity";
+    Haptics[Haptics["RepeatCount"] = 36] = "RepeatCount";
+    Haptics[Haptics["RetriggerPeriod"] = 37] = "RetriggerPeriod";
+    Haptics[Haptics["WaveformVendorPage"] = 38] = "WaveformVendorPage";
+    Haptics[Haptics["WaveformVendorID"] = 39] = "WaveformVendorID";
+    Haptics[Haptics["WaveformCutoffTime"] = 40] = "WaveformCutoffTime";
+    Haptics[Haptics["WaveformNone"] = 4097] = "WaveformNone";
+    Haptics[Haptics["WaveformStop"] = 4098] = "WaveformStop";
+    Haptics[Haptics["WaveformClick"] = 4099] = "WaveformClick";
+    Haptics[Haptics["WaveformBuzzContinuous"] = 4100] = "WaveformBuzzContinuous";
+    Haptics[Haptics["WaveformRumbleContinuous"] = 4101] = "WaveformRumbleContinuous";
+    Haptics[Haptics["WaveformPress"] = 4102] = "WaveformPress";
+    Haptics[Haptics["WaveformRelease"] = 4103] = "WaveformRelease";
+    Haptics[Haptics["WaveformHover"] = 4104] = "WaveformHover";
+    Haptics[Haptics["WaveformSuccess"] = 4105] = "WaveformSuccess";
+    Haptics[Haptics["WaveformError"] = 4106] = "WaveformError";
+    Haptics[Haptics["WaveformInkContinuous"] = 4107] = "WaveformInkContinuous";
+    Haptics[Haptics["WaveformPencilContinuous"] = 4108] = "WaveformPencilContinuous";
+    Haptics[Haptics["WaveformMarkerContinuous"] = 4109] = "WaveformMarkerContinuous";
+    Haptics[Haptics["WaveformChiselMarkerContinuous"] = 4110] = "WaveformChiselMarkerContinuous";
+    Haptics[Haptics["WaveformBrushContinuous"] = 4111] = "WaveformBrushContinuous";
+    Haptics[Haptics["WaveformEraserContinuous"] = 4112] = "WaveformEraserContinuous";
+    Haptics[Haptics["WaveformSparkleContinuous"] = 4113] = "WaveformSparkleContinuous";
+})(Haptics = exports.Haptics || (exports.Haptics = {}));

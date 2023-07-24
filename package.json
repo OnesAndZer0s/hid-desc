@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "HID Descriptors, but like, human-readable",
   "main": "build/hid.js",
+  "types": "build/hid.d.ts",
   "keywords": [
     "hid",
     "usb"
@@ -15,6 +16,7 @@
   "license": "GNU",
 
   "scripts": {
-    "test":"ts-node TEST.ts"
+    "test":"ts-node TEST.ts",
+    "build": "tsc"
   }
 }

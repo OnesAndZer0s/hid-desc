@@ -1,5 +1,4 @@
-
-import { CollectionType, HIDDesc, UsagePages } from "./src/index";
+import { CollectionType, FieldDesc, HIDDesc, UsagePages } from "./build/hid.js";
 
 
 const desc = new HIDDesc()
@@ -8,13 +7,27 @@ const desc = new HIDDesc()
   .Collection( CollectionType.Application )
   .Usage( UsagePages.GenericDesktop.Pointer )
   .Collection( CollectionType.Physical )
-  // .UsagePage( UsagePages.Button )
+  .UsagePage( UsagePages.Button )
+  .UsageMinimum( 1 )
+  .UsageMaximum( 3 )
+  .LogicalMinimum( 0 )
+  .LogicalMaximum( 1 )
+  .ReportCount( 3 )
+  .ReportSize( 1 )
+  .Input( FieldDesc.Data | FieldDesc.Variable | FieldDesc.Absolute )
+  .ReportCount( 1 )
+  .ReportSize( 5 )
+  .Input( FieldDesc.Constant | FieldDesc.Variable | FieldDesc.Absolute )
+  .UsagePage( UsagePages.GenericDesktop )
+  .Usage( UsagePages.GenericDesktop.X )
+  .Usage( UsagePages.GenericDesktop.Y )
+  .LogicalMinimum( -127 )
+  .LogicalMaximum( 127 )
+  .ReportSize( 8 )
+  .ReportCount( 2 )
+  .Input( FieldDesc.Data | FieldDesc.Variable | FieldDesc.Relative )
   .EndCollection()
   .EndCollection()
-
-// .Usage( Usages.GenericDesktop.X )
-
-console.log( "ASS" )
 
 
 const actual = [
@@ -46,11 +59,4 @@ const actual = [
   0xc0           // END_COLLECTION
 ];
 
-console.log( desc.desc == actual );
-
-
-/*
-A bold Usage definition in the following sections identifies a collection. Non-bold definitions are specific features related
-to a device that would be applied to individual controls that generate data. In many cases, specific Usages can be used
-by a number of device typ
-*/
+console.log( desc.desc.every( ( val, index ) => val === actual[ index ] ) );

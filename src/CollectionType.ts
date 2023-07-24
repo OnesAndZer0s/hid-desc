@@ -1,6 +1,6 @@
 export enum CollectionType {
 
-  /*
+  /**
     A physical collection is used for a set of data items that represent
   data points collected at one geometric point. This is useful for
   sensing devices which may need to associate sets of measured or
@@ -12,7 +12,7 @@ export enum CollectionType {
   */
   Physical = 0x00,
 
-  /* 
+  /**
     A group of Main items that might be familiar to applications. It
   could also be used to identify item groups serving different
   purposes in a single device. Common examples are a keyboard or
@@ -23,7 +23,7 @@ export enum CollectionType {
   */
   Application = 0x01,
 
-  /*
+  /**
     A logical collection is used when a set of data items form a
   composite data structure. An example of this is the association
   between a data buffer and a byte count of the data. The
@@ -31,7 +31,7 @@ export enum CollectionType {
   */
   Logical = 0x02,
 
-  /*
+  /**
     Defines a logical collection that wraps all the fields in a report. A
   unique report ID will be contained in this collection. An
   application can easily determine whether a device supports a
@@ -40,7 +40,7 @@ export enum CollectionType {
   */
   Report = 0x03,
 
-  /*
+  /**
     A named array is a logical collection contains an array of selector
   usages. For a given function the set of selectors used by similar
   devices may vary. The naming of fields is common practice when
@@ -54,7 +54,7 @@ export enum CollectionType {
   */
   NamedArray = 0x04,
 
-  /*
+  /**
     A Usage Switch is a logical collection that modifies the meaning
   of the usages that it contains. This collection type indicates to an
   application that the usages found in this collection must be
@@ -67,4 +67,18 @@ export enum CollectionType {
   collection type is used for that.
   */
   UsageSwitch = 0x05,
+
+
+  /**
+    Modifies the meaning of the usage attached to the encompassing
+  collection. A usage typically defines a single operating mode for
+  a control. The usage modifier allows the operating mode of a
+  control to be extended. For instance, an LED is typically on or
+  off. For particular states a device may want a generic method of
+  blinking or choosing the color of a standard LED. Attaching the
+  LED usage to a Usage Modifier collection will indicate to an
+  application that the usage supports a new operating mode.
+  */
+
+  UsageModifier = 0x06,
 };
