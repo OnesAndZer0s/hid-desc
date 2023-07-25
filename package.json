@@ -1,6 +1,6 @@
 {
   "name": "hid-desc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "HID Descriptors, but like, human-readable",
   "main": "build/hid.js",
   "types": "build/hid.d.ts",
