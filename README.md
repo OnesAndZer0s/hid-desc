@@ -64,6 +64,7 @@ const desc = new HIDDesc()
 
 ## Documentation
 
+https://onesandzer0s.github.io/hid-desc/
 
 
 ## Resources
