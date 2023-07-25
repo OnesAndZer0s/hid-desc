@@ -73,7 +73,7 @@ https://onesandzer0s.github.io/hid-desc/
 * [HID Usage Tables](https://usb.org/sites/default/files/hut1_4.pdf) ( but this is the thing that the library implemented )
 
 ## TODO
-- [ ] Add documentation
+- [x] Add documentation
 - [ ] Add a way to parse HID Descriptor from a binary array
 - [ ] Add a way to generate a HID Report from a HID Descriptor
 - [ ] Add Physical Descriptors
