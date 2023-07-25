@@ -25,10 +25,9 @@ Here's a quick example of how you can use `hid-desc`:
 
 ```javascript
 // Import the hid-desc library if using ES modules
-import hD from 'hid-desc';
+import { CollectionType, FieldDesc, HIDDesc, UsagePages } from 'hid-desc';
 
-// Define a basic HID Descriptor for a custom device
-
+// Define a basic HID Descriptor for a mouse
 const desc = new HIDDesc()
   .UsagePage( UsagePages.GenericDesktop )
   .Usage( UsagePages.GenericDesktop.Mouse )
